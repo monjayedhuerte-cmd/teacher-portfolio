@@ -1,0 +1,1242 @@
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+/* LEFT */
+
+.about-left{
+
+    flex:1;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#edf4ff;
+
+    color:#1E63FF;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.about h2{
+
+    font-size:48px;
+
+    color:#0B2C5F;
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.about p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+/* FEATURES */
+
+.about-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin:40px 0;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:500;
+
+}
+
+.feature i{
+
+    color:#1E63FF;
+
+    font-size:20px;
+
+}
+
+/* BUTTONS */
+
+.about-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+/* RIGHT */
+
+.about-right{
+
+    flex:1;
+
+}
+
+/* IMAGE GRID */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}.about{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:#edf4ff;
+
+    border-radius:50%;
+
+    top:-120px;
+
+    right:-120px;
+
+    z-index:0;
+
+}
+
+.about-container{
+
+    position:relative;
+
+    z-index:2;
+
+}.gallery img{
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:translateY(-10px) scale(1.04);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}/* ===========================
+   TEACHING PHILOSOPHY
+=========================== */
+
+.philosophy{
+
+    padding:120px 0;
+
+    background:#f8fbff;
+
+}
+
+.philosophy-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.philosophy-content{
+
+    flex:1;
+
+}
+
+.philosophy-content h2{
+
+    font-size:48px;
+
+    color:#0B2C5F;
+
+    margin:25px 0;
+
+}
+
+.philosophy-content p{
+
+    line-height:2;
+
+    color:#555;
+
+    margin-bottom:25px;
+
+    font-size:17px;
+
+}
+
+.philosophy-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin:35px 0;
+
+}
+
+.philosophy-list div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:500;
+
+}
+
+.philosophy-list i{
+
+    color:#1E63FF;
+
+}
+
+.philosophy-image{
+
+    flex:1;
+
+}
+
+.philosophy-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.philosophy-image img:hover{
+
+    transform:scale(1.03);
+
+}.philosophy{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.philosophy::before{
+
+content:"";
+
+position:absolute;
+
+width:320px;
+
+height:320px;
+
+background:#dfeeff;
+
+border-radius:50%;
+
+left:-150px;
+
+bottom:-150px;
+
+}/* ===========================
+   WHY HIRE ME
+=========================== */
+
+.why-me{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.why-me .section-title{
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+.why-me .section-title p{
+
+    margin-top:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid transparent;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#1E63FF;
+
+    box-shadow:0 25px 55px rgba(0,0,0,.12);
+
+}
+
+.why-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:20px;
+
+    background:#edf4ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.why-icon i{
+
+    font-size:34px;
+
+    color:#1E63FF;
+
+}
+
+.why-card h3{
+
+    color:#0B2C5F;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.why-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}.page-hero{
+
+background:#0B2C5F;
+
+color:white;
+
+padding:150px 0 100px;
+
+text-align:center;
+
+}
+
+.page-hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.page-hero p{
+
+font-size:20px;
+
+opacity:.9;
+
+}
+
+.biography{
+
+padding:120px 0;
+
+}
+
+.biography-container{
+
+display:grid;
+
+grid-template-columns:1fr 1.3fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.bio-image img{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+.bio-content h2{
+
+font-size:42px;
+
+color:#0B2C5F;
+
+margin-bottom:25px;
+
+}
+
+.bio-content p{
+
+line-height:2;
+
+margin-bottom:25px;
+
+color:#555;
+
+}
+
+/*======================================
+TEACHING PHILOSOPHY
+======================================*/
+
+.teaching-philosophy{
+
+    padding:120px 0;
+
+    background:#c8c9c9;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-title span{
+
+    color:#2563eb;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+    margin:20px 0;
+
+    font-size:42px;
+
+    color:#0f172a;
+
+}
+
+.section-title p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.philosophy-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.philosophy-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.philosophy-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(37,99,235,.15);
+
+}
+
+.philosophy-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+}
+
+.philosophy-card h3{
+
+    margin-bottom:20px;
+
+    color:#0f172a;
+
+}
+
+.philosophy-card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+/*======================================
+PROFESSIONAL JOURNEY
+======================================*/
+
+.journey{
+
+    padding:120px 0;
+
+    background:white;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+    padding-left:40px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:12px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:60px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-36px;
+
+    top:5px;
+
+    width:28px;
+
+    height:28px;
+
+    background:#2563eb;
+
+    border:5px solid white;
+
+    border-radius:50%;
+
+    box-shadow:0 0 0 5px rgba(37,99,235,.15);
+
+}
+
+.timeline-content{
+
+    background:#f8fafc;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateX(8px);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.15);
+
+}
+
+.timeline-year{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:6px 16px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-content h3{
+
+    color:#0f172a;
+
+    margin-bottom:8px;
+
+}
+
+.timeline-content h4{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.timeline-content p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:768px){
+
+.timeline{
+
+padding-left:25px;
+
+}
+
+.timeline-dot{
+
+left:-22px;
+
+width:22px;
+
+height:22px;
+
+}
+
+.timeline-content{
+
+padding:25px;
+
+}
+
+}
+/*======================================
+CORE VALUES
+======================================*/
+
+.core-values{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.value-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(37,99,235,.15);
+
+}
+
+.value-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+}
+
+.value-card h3{
+
+    margin-bottom:18px;
+
+    color:#0F172A;
+
+    font-size:24px;
+
+}
+
+.value-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+/*======================================
+TEACHING EXPERTISE
+======================================*/
+
+.teaching-expertise{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.expertise-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.08);
+
+    transition:all .35s ease;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#2563EB;
+
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+
+}
+
+.expertise-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+}
+
+.expertise-card h3{
+
+    margin-bottom:18px;
+
+    color:#0F172A;
+
+    font-size:22px;
+
+}
+
+.expertise-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/*======================================
+BEYOND THE CLASSROOM
+======================================*/
+
+.beyond-classroom{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.interest-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    margin-top:60px;
+
+}
+
+.interest-card{
+
+    background:#ffffff;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(15,23,42,.08);
+
+    transition:.35s;
+
+}
+
+.interest-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 50px rgba(37,99,235,.15);
+
+}
+
+.interest-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:#ffffff;
+
+    font-size:30px;
+
+}
+
+.interest-card h3{
+
+    margin-bottom:18px;
+
+    color:#0F172A;
+
+    font-size:22px;
+
+}
+
+.interest-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/*======================================
+ABOUT CTA
+======================================*/
+
+.about-cta{
+
+    padding:120px 20px;
+
+    background:linear-gradient(135deg,#0F172A,#1D4ED8);
+
+    color:#ffffff;
+
+}
+
+.cta-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.cta-content span{
+
+    display:inline-block;
+
+    color:#BFDBFE;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.cta-content h2{
+
+    font-size:48px;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.cta-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#E2E8F0;
+
+    margin-bottom:45px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.cta-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.cta-btn.primary{
+
+    background:#ffffff;
+
+    color:#2563EB;
+
+}
+
+.cta-btn.primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(255,255,255,.25);
+
+}
+
+.cta-btn.secondary{
+
+    border:2px solid rgba(255,255,255,.4);
+
+    color:#ffffff;
+
+}
+
+.cta-btn.secondary:hover{
+
+    background:#ffffff;
+
+    color:#2563EB;
+
+    transform:translateY(-5px);
+
+}
+
+@media(max-width:768px){
+
+    .cta-content h2{
+
+        font-size:34px;
+
+    }
+
+    .cta-content p{
+
+        font-size:16px;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+}

@@ -1,0 +1,863 @@
+/*=====================================
+PORTFOLIO HERO
+======================================*/
+
+.portfolio-hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(135deg,#0F172A,#1E40AF,#2563EB);
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.portfolio-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-200px;
+
+    right:-150px;
+
+}
+
+.portfolio-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(255,255,255,.05);
+
+    bottom:-150px;
+
+    left:-120px;
+
+    border-radius:50%;
+
+}
+
+.portfolio-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:50px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.portfolio-hero h1{
+
+    font-size:64px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.portfolio-hero p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+    color:#E2E8F0;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+/*==================================
+CLASSROOM GALLERY
+==================================*/
+
+.gallery-section{
+
+padding:120px 0;
+
+background:#F8FAFC;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:25px;
+
+margin-top:70px;
+
+}
+
+.gallery-item{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:22px;
+
+height:260px;
+
+cursor:pointer;
+
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.gallery-item.large{
+
+grid-column:span 2;
+
+height:540px;
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.08);
+
+}
+
+.overlay{
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+padding:30px;
+
+background:linear-gradient(
+
+transparent,
+
+rgba(0,0,0,.75)
+
+);
+
+color:white;
+
+opacity:0;
+
+transition:.4s;
+
+}
+
+.gallery-item:hover .overlay{
+
+opacity:1;
+
+}
+
+.overlay h3{
+
+font-size:24px;
+
+}
+@media(max-width:900px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-item.large{
+
+grid-column:auto;
+
+height:300px;
+
+}
+
+}
+/*==================================
+TEACHING RESOURCE LIBRARY
+==================================*/
+
+.resource-library{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.resource-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.resource-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 70px rgba(37,99,235,.15);
+
+}
+
+.resource-icon{
+
+    width:80px;
+
+    height:80px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.resource-card h3{
+
+    font-size:26px;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+.resource-card p{
+
+    color:#64748B;
+
+    margin-bottom:25px;
+
+}
+
+.resource-card ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.resource-card ul li{
+
+    margin-bottom:14px;
+
+}
+
+.resource-card ul li a{
+
+    display:block;
+
+    padding:12px 16px;
+
+    background:#F8FAFC;
+
+    border-radius:12px;
+
+    color:#0F172A;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.resource-card ul li a:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:translateX(6px);
+
+}
+/*==================================
+TEACHING MATERIALS
+==================================*/
+
+.materials-section{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.materials-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.material-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.material-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 70px rgba(37,99,235,.15);
+
+}
+
+.material-icon{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.material-card h3{
+
+    font-size:24px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.material-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.material-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.material-buttons a{
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.material-buttons a:hover{
+
+    background:#1E40AF;
+
+}
+/*==================================
+EDUCATIONAL TECHNOLOGY DASHBOARD
+==================================*/
+
+.technology-section{
+
+    padding:120px 0;
+
+    background:#F8FAFC;
+
+}
+
+.technology-dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(37,99,235,.18);
+
+}
+
+.dashboard-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+.dashboard-top span{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+.dashboard-card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    color:#0F172A;
+
+}
+
+.dashboard-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.dashboard-progress{
+
+    width:100%;
+
+    height:12px;
+
+    background:#E5E7EB;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.dashboard-fill{
+
+    height:100%;
+
+    background:linear-gradient(90deg,#2563EB,#60A5FA);
+
+    border-radius:20px;
+
+}
+
+/*==================================
+TEACHING PHILOSOPHY
+==================================*/
+
+.philosophy-section{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.philosophy-card{
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    background:linear-gradient(135deg,#2563EB,#1E40AF);
+
+    color:#fff;
+
+    border-radius:28px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 25px 70px rgba(37,99,235,.25);
+
+}
+
+.quote-icon{
+
+    font-size:40px;
+
+    margin-bottom:25px;
+
+}
+
+.philosophy-card blockquote{
+
+    font-size:28px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+    font-weight:500;
+
+}
+
+.philosophy-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:35px;
+
+    margin-top:70px;
+
+}
+
+.philosophy-item{
+
+    background:#F8FAFC;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.philosophy-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.philosophy-item i{
+
+    font-size:42px;
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+.philosophy-item h3{
+
+    margin-bottom:15px;
+
+    color:#0F172A;
+
+}
+
+.philosophy-item p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/*==================================
+CALL TO ACTION
+==================================*/
+
+.portfolio-cta{
+
+    padding:120px 20px;
+
+    background:linear-gradient(135deg,#1E3A8A,#2563EB);
+
+    color:white;
+
+}
+
+.cta-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.cta-content h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+.cta-content p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#E2E8F0;
+
+    margin-bottom:50px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-buttons a{
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:white;
+
+    color:#2563EB;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.btn-outline{
+
+    border:2px solid white;
+
+    color:white;
+
+}
+
+.btn-outline:hover{
+
+    background:white;
+
+    color:#2563EB;
+
+}

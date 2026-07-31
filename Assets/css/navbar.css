@@ -1,0 +1,273 @@
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#08264d;
+
+    z-index:999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:85px;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-box{
+
+    width:55px;
+
+    height:55px;
+
+    border:2px solid rgba(255,255,255,.3);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+.logo-text h2{
+
+    color:white;
+
+    font-size:23px;
+
+}
+
+.logo-text span{
+
+    color:#d4d4d4;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navbar{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    position:relative;
+
+}
+
+.nav-links li a{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links li a:hover{
+
+    color:#f4b400;
+
+}
+
+.active{
+
+    color:#f4b400 !important;
+
+}
+
+/* underline animation */
+
+.nav-links li::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#f4b400;
+
+    transition:.3s;
+
+}
+
+.nav-links li:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.hire-btn{
+
+    padding:12px 30px;
+
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:55px;
+
+    left:0;
+
+    background:white;
+
+    width:220px;
+
+    border-radius:12px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(15px);
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+.dropdown-menu li{
+
+    list-style:none;
+
+}
+
+.dropdown-menu li a{
+
+    color:#1b3358;
+
+    display:block;
+
+    padding:15px 20px;
+
+    font-size:15px;
+
+}
+
+.dropdown-menu li a:hover{
+
+    background:#f2f6ff;
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.dropdown i{
+
+    font-size:12px;
+
+    margin-left:5px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}

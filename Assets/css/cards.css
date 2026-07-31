@@ -1,0 +1,99 @@
+/* ===========================
+   QUICK LINKS
+=========================== */
+
+.quick-links{
+
+    margin-top:-20px;
+
+    padding:30px 0 60px;
+
+    background:#50606e;
+
+}
+
+.quick-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:18px;
+
+}
+
+.quick-card{
+
+    background:#dfd8d8;
+
+    border-radius:18px;
+
+    padding:24px 18px;
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border:1px solid #eef3fb;
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+    border-color:#1E63FF;
+
+}
+
+.quick-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#edf4ff;
+
+    color:#1E63FF;
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+}
+
+.quick-card h3{
+
+    color:#0B2C5F;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+}
+
+.quick-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}

@@ -1,0 +1,199 @@
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    background:#ffffff;
+
+    padding:70px 0;
+
+}
+
+.hero-container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+}
+
+/* LEFT */
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.greeting{
+
+    font-size:45px;
+
+    color:#1E63FF;
+
+    font-family:cursive;
+
+}
+
+.hero-left h1{
+
+    font-size:68px;
+
+    color:#dbdee2;
+
+    line-height:1.1;
+
+    margin:10px 0;
+
+}
+
+.hero-left h2{
+
+    font-size:34px;
+
+    color:#07bcdb;
+
+    font-weight:500;
+
+}
+
+.hero-left p{
+
+    margin:35px 0;
+
+    line-height:2;
+
+    color:#555;
+
+    font-size:18px;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:45px;
+
+}
+
+/* INFORMATION */
+
+.hero-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.info-box{
+
+    display:flex;
+
+    gap:15px;
+
+    background:rgb(1, 1, 87);
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.info-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.info-box i{
+
+    font-size:28px;
+
+    color:#1E63FF;
+
+}
+
+.info-box h4{
+
+    font-size:15px;
+
+    margin-bottom:5px;
+
+}
+
+.info-box p{
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+/* RIGHT */
+
+.hero-right{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-right img{
+
+    width:540px;
+
+    border-radius:35px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* DECORATION */
+
+.hero-shape{
+
+    position:absolute;
+
+    width:540px;
+
+    height:100%;
+
+    background:#1E63FF;
+
+    border-radius:50px 200px 50px 200px;
+
+    transform:rotate(-5deg);
+
+    right:10px;
+
+    top:15px;
+
+    z-index:1;
+
+}

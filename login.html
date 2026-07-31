@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Password</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f4f4f4;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+input{
+    padding:10px;
+    width:220px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+<h2>Protected Website</h2>
+
+<p>Please enter the password.</p>
+
+<input type="password" id="password">
+
+<br>
+
+<button onclick="checkPassword()">Enter</button>
+
+<p id="message" style="color:red;"></p>
+
+</div>
+
+<script>
+
+function checkPassword(){
+
+const password="Teacher2026";
+
+const entered=document.getElementById("password").value;
+
+if(entered===password){
+
+window.location.href="home.html";
+
+}else{
+
+document.getElementById("message").innerHTML="Incorrect Password";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

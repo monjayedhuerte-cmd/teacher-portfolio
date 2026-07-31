@@ -1,0 +1,587 @@
+/*======================================
+GOOGLE FONT
+======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*======================================
+GLOBAL
+======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#1E293B;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/*======================================
+HERO
+======================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#0F172A,#1D4ED8);
+
+    color:white;
+
+    text-align:center;
+
+    padding:130px 20px 110px;
+
+}
+
+.hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    margin:30px 0 20px;
+
+    font-weight:800;
+
+}
+
+.hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#E2E8F0;
+
+}
+
+/*======================================
+SECTION TITLE
+======================================*/
+
+.gallery{
+
+    padding:100px 20px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+/*======================================
+GALLERY GRID
+======================================*/
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/*======================================
+CARD
+======================================*/
+
+.gallery-item{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 45px rgba(15,23,42,.08);
+
+    transition:.35s;
+
+    border:1px solid #E2E8F0;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(37,99,235,.18);
+
+    border-color:#2563EB;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/*======================================
+LIGHTBOX
+======================================*/
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    padding:40px;
+
+}
+
+.lightbox img{
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    border-radius:15px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close:hover{
+
+    transform:rotate(90deg);
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:100px 20px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}/*======================================
+GOOGLE FONT
+======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*======================================
+GLOBAL
+======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#1E293B;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/*======================================
+HERO
+======================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#0F172A,#1D4ED8);
+
+    color:white;
+
+    text-align:center;
+
+    padding:130px 20px 110px;
+
+}
+
+.hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 28px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    margin:30px 0 20px;
+
+    font-weight:800;
+
+}
+
+.hero p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#E2E8F0;
+
+}
+
+/*======================================
+SECTION TITLE
+======================================*/
+
+.gallery{
+
+    padding:100px 20px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:#0F172A;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+/*======================================
+GALLERY GRID
+======================================*/
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/*======================================
+CARD
+======================================*/
+
+.gallery-item{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    box-shadow:0 18px 45px rgba(15,23,42,.08);
+
+    transition:.35s;
+
+    border:1px solid #E2E8F0;
+
+}
+
+.gallery-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(37,99,235,.18);
+
+    border-color:#2563EB;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/*======================================
+LIGHTBOX
+======================================*/
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    padding:40px;
+
+}
+
+.lightbox img{
+
+    max-width:95%;
+
+    max-height:90vh;
+
+    border-radius:15px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.5);
+
+}
+
+.close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close:hover{
+
+    transform:rotate(90deg);
+
+}
+
+/*======================================
+RESPONSIVE
+======================================*/
+
+@media(max-width:991px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:100px 20px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
