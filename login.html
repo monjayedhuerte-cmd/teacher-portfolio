@@ -1,91 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Teacher Portfolio | Secure Access</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="Assets/css/login.css">
+    <title>Edmon Jay Huerte | Secure Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/login.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<div class="background"></div>
+    <!-- Animated Background -->
+    <div id="particles-js"></div>
 
-<div class="login-card">
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
 
-    <div class="logo">
-
-        <i class="fas fa-user-graduate"></i>
+        <span class="shape shape1"></span>
+        <span class="shape shape2"></span>
+        <span class="shape shape3"></span>
+        <span class="shape shape4"></span>
+        <span class="shape shape5"></span>
+        <span class="shape shape6"></span>
 
     </div>
 
-    <h1>Welcome</h1>
+    <!-- Dark Mode Button -->
+    <button id="themeToggle" class="theme-btn">
 
-    <h2>Edmon Jay Huerte</h2>
+        <i class="fas fa-moon"></i>
 
-    <p>
-        Professional Teacher Portfolio
-    </p>
+    </button>
 
-    <small>
-        This portfolio is password protected.
-        Please enter the password to continue.
-    </small>
+    <!-- Login Card -->
+    <div class="login-card">
 
-    <form id="loginForm">
+        <!-- Profile -->
+        <div class="profile">
 
-        <div class="input-group">
-
-            <i class="fas fa-lock"></i>
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Enter Password"
-                required
-            >
-
-            <button
-                type="button"
-                id="togglePassword"
-                class="eye-btn">
-
-                <i class="fas fa-eye"></i>
-
-            </button>
+            <img src="Assets/images/Edmon's Profile Picture.jpg"
+                alt="Edmon Jay Huerte">
 
         </div>
 
-        <button class="login-btn">
+        <!-- Title -->
 
-            Unlock Portfolio
+        <h1>Welcome!</h1>
 
-        </button>
+        <h2>Edmon Jay Huerte</h2>
 
-        <p id="error"></p>
+        <p class="profession">
 
-    </form>
+            Professional Teacher
 
-    <div class="footer">
+        </p>
 
-        © 2026 Edmon Jay Huerte
+        <p class="description">
+
+            Welcome to my professional teaching portfolio.
+            This website contains my teaching experience,
+            lesson plans, certifications, trainings,
+            classroom achievements, and instructional materials.
+
+        </p>
+
+        <!-- Login Form -->
+
+        <form id="loginForm">
+
+            <div class="input-box">
+
+                <i class="fas fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                <button
+                    type="button"
+                    id="togglePassword">
+
+                    <i class="fas fa-eye"></i>
+
+                </button>
+
+            </div>
+
+            <div class="remember">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember this device
+
+                </label>
+
+            </div>
+
+            <button
+                class="login-btn"
+                type="submit">
+
+                <i class="fas fa-arrow-right"></i>
+
+                Unlock Portfolio
+
+            </button>
+
+            <p id="errorMessage"></p>
+
+        </form>
+
+        <footer>
+
+            © 2026 Edmon Jay Huerte
+
+        </footer>
 
     </div>
 
-</div>
+    <!-- Loading Screen -->
 
-<script src="Assets/JS/login.js"></script>
+    <div id="loadingScreen">
+
+        <div class="loader"></div>
+
+        <h3>Loading Portfolio...</h3>
+
+    </div>
+
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="Assets/JS/login.js"></script>
 
 </body>
+
 </html>
