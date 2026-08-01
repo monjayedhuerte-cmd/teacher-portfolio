@@ -3,77 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enter Password</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#f4f4f4;
-}
+<title>Teacher Portfolio | Secure Access</title>
 
-.box{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-}
+<link rel="stylesheet" href="Assets/css/login.css">
 
-input{
-    padding:10px;
-    width:220px;
-    margin:10px 0;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-button{
-    padding:10px 20px;
-    cursor:pointer;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
 
-<div class="box">
-<h2>Protected Website</h2>
+<div class="background"></div>
 
-<p>Please enter the password.</p>
+<div class="login-card">
 
-<input type="password" id="password">
+    <div class="logo">
 
-<br>
+        <i class="fas fa-user-graduate"></i>
 
-<button onclick="checkPassword()">Enter</button>
+    </div>
 
-<p id="message" style="color:red;"></p>
+    <h1>Welcome</h1>
+
+    <h2>Edmon Jay Huerte</h2>
+
+    <p>
+        Professional Teacher Portfolio
+    </p>
+
+    <small>
+        This portfolio is password protected.
+        Please enter the password to continue.
+    </small>
+
+    <form id="loginForm">
+
+        <div class="input-group">
+
+            <i class="fas fa-lock"></i>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <button
+                type="button"
+                id="togglePassword"
+                class="eye-btn">
+
+                <i class="fas fa-eye"></i>
+
+            </button>
+
+        </div>
+
+        <button class="login-btn">
+
+            Unlock Portfolio
+
+        </button>
+
+        <p id="error"></p>
+
+    </form>
+
+    <div class="footer">
+
+        © 2026 Edmon Jay Huerte
+
+    </div>
 
 </div>
 
-<script>
-
-function checkPassword(){
-
-const password="Teacher2026";
-
-const entered=document.getElementById("password").value;
-
-if(entered===password){
-
-window.location.href="home.html";
-
-}else{
-
-document.getElementById("message").innerHTML="Incorrect Password";
-
-}
-
-}
-
-</script>
+<script src="Assets/JS/login.js"></script>
 
 </body>
 </html>
